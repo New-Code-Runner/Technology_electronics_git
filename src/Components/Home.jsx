@@ -2,11 +2,18 @@ import { useLoaderData } from "react-router-dom";
 import Brand from "./Brand";
 import { useTheme } from "./ThemeProvider";
 import FAQ from "./FAQ";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const { toggleTheme, isDarkMode } = useTheme();
-  const data = useLoaderData();
-  console.log(data);
+  // const data = useLoaderData();
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch('Homedata.json')
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+  console.log(`data:`, data);
 
   return (
     <>
