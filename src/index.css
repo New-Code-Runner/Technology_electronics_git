@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.light-theme {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .dark-theme {
+    background-color: #333;
+    color: #fff;
+
+  }
+
