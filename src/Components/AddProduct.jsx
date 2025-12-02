@@ -30,7 +30,7 @@ const AddProduct = () => {
     console.log(product);
 
     // Sending data to the server
-    fetch("https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///addProduct", {
+    fetch("https://technology-electronics-server-side.vercel.app/addProduct", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -24,7 +24,7 @@ const DetailsPage = () => {
       rating,
       types,
     };
-    fetch(`https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///myCart`, {
+    fetch(`https://technology-electronics-server-side.vercel.app/myCart`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

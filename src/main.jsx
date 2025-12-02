@@ -37,22 +37,22 @@ const router = createBrowserRouter([
       {
         path: "/myCart",
         element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: () => fetch(`https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///myCart`)
+        loader: () => fetch(`https://technology-electronics-server-side.vercel.app/myCart`)
       },
       {
         path: "/detailsPage/:id",
         element: <PrivateRoute><DetailsPage></DetailsPage></PrivateRoute>,
-        loader: ({params}) => fetch(`https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///updateProduct/${params.id}`)
+        loader: ({params}) => fetch(`https://technology-electronics-server-side.vercel.app/updateProduct/${params.id}`)
       },
       {
         path: "/updatePage/:id",
         element: <PrivateRoute><UpdatePage></UpdatePage></PrivateRoute>,
-        loader: ({params}) => fetch(`https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///updateProduct/${params.id}`)
+        loader: ({params}) => fetch(`https://technology-electronics-server-side.vercel.app/updateProduct/${params.id}`)
       },
       {
         path: "/brandPage/:brand",
         element:<BrandPage></BrandPage>,
-        loader: ({params}) => fetch(`https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///addProduct/${params.brand}`)
+        loader: ({params}) => fetch(`https://technology-electronics-server-side.vercel.app/addProduct/${params.brand}`)
       },
       {
         path: "/login",

@@ -22,7 +22,7 @@ const UpdatePage = () => {
 
         const product = { photo, name, brand, types, price, shortDescription, rating };
 
-        fetch(`https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///${data._id}`, {
+        fetch(`https://technology-electronics-server-side.vercel.app/${data._id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)

@@ -20,7 +20,7 @@ const MyCart = () => {
 
   const handleDelete = (_id) => {
 
-    fetch(`https://technology-electronics-server-side-bxt1105mp-rezuans-projects.vercel.app///myCart/${_id}`, {
+    fetch(`https://technology-electronics-server-side.vercel.app/myCart/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
