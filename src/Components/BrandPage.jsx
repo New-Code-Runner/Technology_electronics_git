@@ -4,6 +4,7 @@ import { useTheme } from "./ThemeProvider";
 const BrandPage = () => {
   const { toggleTheme, isDarkMode } = useTheme();
   const product = useLoaderData();
+  console.log(product);
   return (
     
       <div className={` w-[100%] mx-auto ${

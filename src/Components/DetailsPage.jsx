@@ -24,7 +24,7 @@ const DetailsPage = () => {
       rating,
       types,
     };
-    fetch(`http://localhost:5000/myCart`, {
+    fetch(`https://technology-electronics-server-side.vercel.app//myCart`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
