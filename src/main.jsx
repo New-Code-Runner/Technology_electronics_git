@@ -37,22 +37,22 @@ const router = createBrowserRouter([
       {
         path: "/myCart",
         element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: () => fetch(`https://technology-electronics-server-side.vercel.app/myCart`)
+        loader: () => fetch(`http://localhost:5000/myCart`)
       },
       {
         path: "/detailsPage/:id",
         element: <PrivateRoute><DetailsPage></DetailsPage></PrivateRoute>,
-        loader: ({params}) => fetch(`https://technology-electronics-server-side.vercel.app/updateProduct/${params.id}`)
+        loader: ({params}) => fetch(`http://localhost:5000/updateProduct/${params.id}`)
       },
       {
         path: "/updatePage/:id",
         element: <PrivateRoute><UpdatePage></UpdatePage></PrivateRoute>,
-        loader: ({params}) => fetch(`https://technology-electronics-server-side.vercel.app/updateProduct/${params.id}`)
+        loader: ({params}) => fetch(`http://localhost:5000/updateProduct/${params.id}`)
       },
       {
         path: "/brandPage/:brand",
         element:<BrandPage></BrandPage>,
-        loader: ({params}) => fetch(`https://technology-electronics-server-side.vercel.app/addProduct/${params.brand}`)
+        loader: ({params}) => fetch(`http://localhost:5000/addProduct/${params.brand}`)
       },
       {
         path: "/login",
